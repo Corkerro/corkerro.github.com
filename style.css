@@ -10,8 +10,30 @@ h1,h2,h3,h4,h5,h6,p{
 .container{
     max-width: 1170px;
     margin: 0 auto;
-
 }
+
+@media (max-width: 1170px){
+    .container{
+        max-width: 970px;
+    }
+    .main1,.main2{
+        background-color: rgba(0, 0, 0, 0.40);
+        color: #ffffff;
+        padding: 25px;
+        border-radius: 20px;
+    }
+}
+@media (max-width: 992px){
+    .container{
+        max-width: 750px;
+    }
+}
+@media (max-width: 767px){
+    .container{
+        max-width: none;
+    }
+}
+
 
 .incontainer{
     max-width: 275px;
@@ -34,18 +56,21 @@ h1,h2,h3,h4,h5,h6,p{
 
 .hInner{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
 
 }
 
 .first{
     display: flex;
+    flex-wrap: wrap;
 }
 
 
 .logo{
     display: flex;
+    
     align-items: center;
     margin-right: 117px;
     
@@ -63,6 +88,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 .nav{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     max-width: 422px;
 
@@ -187,7 +213,9 @@ h1,h2,h3,h4,h5,h6,p{
 
 .info{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 
@@ -195,6 +223,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 .iFirst,.iSecond,.iThird{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-top: 72px;
 }
@@ -232,160 +261,13 @@ h1,h2,h3,h4,h5,h6,p{
 
 /* Katalog */
 
-.katalog{
-    width: 100%;
-    height: 1042px;
 
-    background: #FBF6ED;
-
-
-}
-
-.kText{
-    font-style: normal;
-    font-weight: 900;
-    font-size: 30px;
-    line-height: 37px;
-
-    color: #000000;
-
-    padding-top: 109px;
-    margin-bottom: 126px;
-}
-
-.jivotnoe{
-    width: 370px;
-    height: 571px;
-    background: #FFFFFF;
-
-
-    box-shadow: 0px 10px 30px rgba(89, 71, 38, 0.08);
-    border-radius: 20px;;
-}
 
 
 /* uppertext */
 
-.uppertext{
-    display: flex;
-
-   padding-left: 31px;
-   padding-top: 28px;
-}
-
-/* Mes9c */
-.mes9ctext{
-    margin-left: 8px;
-    font-size: 13px;
-    line-height: 16px;
-
-    color: #000000;
 
 
-    flex: none;
-    order: 1;
-    align-self: center;
-    flex-grow: 0;
-    margin: 8px 0px;
-}
-
-.mes9c{
-    display: flex;
-    align-items: center;
-    margin-right: 18px;
-}
-
-/* Nagradi */
-
-.nagraditext{
-    margin-left: 8px;
-    font-size: 13px;
-    line-height: 16px;
-
-    color: #000000;
-
-
-    flex: none;
-    order: 1;
-    align-self: center;
-    flex-grow: 0;
-    margin: 8px 0px;
-}
-
-.nagradi{
-    display: flex;
-    align-items: center;
-    margin-right: 64px;
-}
-
-
-.img{
-    margin:26px 59px 26px 63px;
-}
-
-.jTitle{
-    font-style: normal;
-    font-weight: bold;
-    font-size: 19px;
-    line-height: 23px;
-
-    color: #000000;
-
-    margin-bottom: 15px;
-}
-
-.jsub{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 21px;
-
-    color: #000000;
-    margin-bottom: 15px;
-}
-
-.harakteristika{
-    display: flex;
-    margin-bottom: 40px;
-
-}
-
-.har1,.har2{
-    text-transform: uppercase;
-    font-size: 12px;
-    line-height: 138.4%;
-
-    text-transform: uppercase;
-
-    color: #000000;
-}
-
-.har1{
-    margin-right: 16px;
-}
-
-.price{
-    font-style: normal;
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 27px;
-
-    color: #32B71D;
-}
-
-.end{
-    display: flex;
-    justify-content: space-between;
-}
-
-.harimg{
-    margin-right: 8px;
-}
-
-.kartochki{
-    display: flex;
-    justify-content: space-between;
-}
 
 
 .firstcoln,.secondcoln,.thirdcoln{
@@ -429,7 +311,8 @@ h1,h2,h3,h4,h5,h6,p{
 
 .allphotos{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 
@@ -539,11 +422,13 @@ h1,h2,h3,h4,h5,h6,p{
 
 .fphone{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 .footer__inner{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
     padding-top: 53px;
 }
@@ -610,13 +495,13 @@ button:last-child{
 .style{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     margin: 0 auto;
 }
 
 .card{
     margin-bottom: 40px;
     transition: 0.5s all;
-    margin-right: 15px;
 }
   
 .card:last-child{
@@ -641,7 +526,7 @@ button:last-child{
 
 .cardheader{
     display: flex;
-    justify-content: space-between  ;
+    justify-content: space-around  ;
     align-items: center;
 }
 
